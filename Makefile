@@ -5,30 +5,26 @@
 #                                                     +:+ +:+         +:+      #
 #    By: bakilic <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/03/02 15:25:09 by bakilic           #+#    #+#              #
-#    Updated: 2023/03/02 15:25:09 by bakilic          ###   ########.fr        #
+#    Created: 2023/03/02 15:22:36 by bakilic           #+#    #+#              #
+#    Updated: 2023/03/02 15:22:37 by bakilic          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS		= ft_printf.c utils.c ft_atoi.c
+NAME1 = server
 
-OBJS 		= $(SRCS:.c=.o)
+NAME2 = client
 
-CC			= gcc
-CFLAGS		= -Wall -Wextra -Werror
+all :
+	@make -C ./utils
+	@gcc -Wall -Wextra -Werror server.c ./utils/libftprintf.a -o $(NAME1)
+	@gcc -Wall -Wextra -Werror client.c ./utils/libftprintf.a -o $(NAME2)
 
-NAME		= libftprintf.a
+clean :
+	@make clean -C ./utils
+	@rm -rf client.o server.o
 
-all:		$(NAME)
+fclean : clean
+	@make fclean -C ./utils
+	@rm -rf $(NAME1) $(NAME2)
 
-$(NAME):	$(OBJS)
-			ar rcs $(NAME) $(OBJS)
-clean:
-			rm -f $(OBJS)
-
-fclean: 
-			rm -f $(NAME)
-
-re:			fclean all
-
-.PHONY:		all clean fclean re
+re : fclean all

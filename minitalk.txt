@@ -1,0 +1,4 @@
+Here are the bunch of websites those can help you to build your "minitalk" projects.
+
+https://www.geeksforgeeks.org/signals-c-language/
+https://www.educative.io/answers/bitwise-operators?utm_campaign=brand_educative&utm_source=google&utm_medium=ppc&utm_content=performance_max&eid=5082902844932096&utm_term=&utm_campaign=%5BNew%5D+Performance+Max&utm_source=adwords&utm_medium=ppc&hsa_acc=5451446008&hsa_cam=18511913007&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjwk7ugBhDIARIsAGuvgPZb0UxjH42zL7dTPe67rfmRL3hbLxSFI1mq-W6niw5hDq8FxCxmoMsaAmIfEALw_wcB
